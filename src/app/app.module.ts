@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,17 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardandsoftskillsComponent } from './components/hardandsoftskills/hardandsoftskills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { InterceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { EditSkillComponent } from './components/hardandsoftskills/edit-skill.component';
+import { NewSkillComponent } from './components/hardandsoftskills/new-skill.component';
+import { EditAcercaDeComponent } from './components/acercade/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -25,15 +37,26 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     HardandsoftskillsComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    FormsModule,
 
   ],
-  providers: [],
+  providers: [InterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
