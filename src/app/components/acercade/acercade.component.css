@@ -3,7 +3,7 @@
 }
 
 div{
-    background-color: lightblue;
+    background-color: #c6e6ff;
     text-align: center;
 }
 
@@ -38,5 +38,14 @@ div{
 #nombre{
     font-weight: bold;
     margin-top: 30%;
+    font-size: larger;
    
+}
+
+/*Etiqueta H1*/
+
+h1{
+    font-weight: bold;
+    font-style: italic;
+    color: #37479e;
 }

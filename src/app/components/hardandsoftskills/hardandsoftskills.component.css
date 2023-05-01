@@ -1,4 +1,16 @@
 .row {
-    background-color: lightblue;
+    background-color: white;
     padding: 20px;
+    
+}
+
+h1{
+    font-weight: bold;
+    font-style: italic;
+    color: #37479e;
+}
+
+.HysTitulo{
+    
+    text-align: center;
 }

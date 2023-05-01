@@ -1,11 +1,25 @@
 .row{
     padding: 20px;
+    
 }
 
 div{
-    background: lightblue;
+    background: #dff1ff;
 }
 
 h1,h3{
     display: inline;
+    font-weight: bold;
+    font-style: italic;
+    color: #37479e;
+}
+
+.EduTitulo{
+    
+        text-align: center;
+    
+}
+
+.lead{
+    font-size: medium;
 }
